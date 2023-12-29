@@ -1,0 +1,530 @@
+footer
+{
+    width: 100%;
+    padding: 50px 100px;
+    background: var(--hover-eff);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+}
+
+footer .container
+{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+
+footer .container .sec h2
+{
+    position: relative;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 13px;
+    font-size: 20px;
+}
+
+footer .container .sec h3
+{
+    position: relative;
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+footer .container .sec p
+{
+    color: white;
+    margin-bottom: 17px;
+
+}
+
+footer .container .sci
+{
+    margin-top: 20px;
+    display: flex;
+}
+
+footer .container .sci li
+{
+    list-style: none;
+    margin-right: 10px;
+}
+
+footer .container .sci li a
+{
+    display: inline-block;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+footer .container .sci li a svg
+{
+    width: 30pt;
+    height: 30pt;
+    fill: white;
+    transition: 0.3s ease-in-out;
+}
+
+footer .container .sci li a svg:hover
+{
+    width: 32pt;
+    height: 32pt;
+}
+
+footer .container .contact .icons
+{
+    object-fit: contain;
+    fill: white;    
+}
+
+footer .container .aboutus ul
+{
+    display: flex;
+} 
+
+footer .container .aboutus ul li p
+{
+    display: none;
+}
+
+footer .container .aboutus ul li .icn
+{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 20px;
+    display: flex;
+    object-fit: contain;
+    width: 34px;
+    fill: #fff;
+    transition: 0.4s;
+}
+
+footer .container .aboutus ul li .icn:hover
+{
+    width: 37px;
+}
+
+footer .container .aboutus ul li
+{
+    list-style: none;
+}
+
+footer .container .quicklinks
+{
+    position: relative;
+}
+
+footer .container .quicklinks ul li
+{
+    list-style: none;
+}
+
+footer .container .quicklinks ul li a
+{
+    color: white;
+    text-decoration: none;
+    margin-bottom: 12px;
+    display: inline-block;
+    transition: 0.2s ease-in-out;
+}
+
+footer .container .quicklinks ul li a:hover
+{
+    color: white;
+}
+
+footer .container .contact .info
+{
+    position: relative;
+}
+
+footer .container .contact .info li
+{
+    display: flex;
+    align-items: center;
+    grid-template-columns: 30px 1fr;
+    margin-bottom: 14px;
+}
+
+footer .container .contact .info li a
+{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    gap: 10px;
+}
+
+footer .container .sci li a p
+{
+    visibility: hidden;
+}
+
+footer .container .contact .info li a p
+{
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.copyrightText
+{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background: black;
+    padding: 10px 10px;
+    text-align: center;
+    color: white;
+}
+
+.copyrightText a
+{
+    text-decoration: none;
+    color: white;
+    font-family: 'Oxanium Bold', sans-serif;
+    font-size: 17px;
+    transition: all 0.4s ease-in-out;
+}
+
+.copyrightText a:hover
+{
+    font-size: 18px;
+}
+
+.copyrightText p span
+{
+    color: white;
+}
+
+@media screen and (max-width:768px)
+{
+    .footer .container
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .lower
+    {
+        position: relative;
+    }
+
+    .copyrightText
+    {
+        width: 100%;
+    }
+
+    .footer
+    {
+        padding: 50px 50px;
+    }
+
+    footer .container
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .icn
+    {
+        object-fit: cover;
+        width: 34px;
+    }
+
+    footer .container .contact .info li a
+    { 
+        font-size: 14px;
+    }
+
+    footer .container .quicklinks
+    {
+        font-size: 14px;
+    }
+
+    footer .container .contact h2
+    { 
+        font-size: 16px;
+    }
+
+    footer .container .quicklinks h2
+    {
+        font-size: 16px;
+    }
+    
+}
+
+@media screen and (max-width:1130px)
+{
+
+    footer .container
+    {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+
+@media screen and (max-width:1000px)
+{
+    footer
+    {
+        min-height: 40vh;
+        padding: 40px 120px;
+    }
+
+    footer .container
+    {
+        width: 100%;
+        grid-template-columns: repeat(2.1fr);
+        grid-gap: 20px;
+    }
+
+}
+
+@media screen and (max-width:660px)
+{
+     .copyrightText
+    {
+        width: 100%;
+    }
+    .footer
+    {
+        min-height: 60vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer .container
+    {
+        grid-template-columns: 1fr 1fr;
+    }
+    footer .container .sci
+    {
+        margin-bottom: 20px;
+    }
+
+    footer .container .quicklinks
+    {
+        margin-bottom: 20px;
+    }
+
+    footer .container .contact .info li a
+    { 
+        font-size: 16px;
+    }
+
+    footer .container .quicklinks
+    {
+        font-size: 16px;
+    }
+
+    footer .container .contact h2
+    { 
+        font-size: 18px;
+    }
+
+    footer .container .quicklinks h2
+    {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:470px)
+{
+    footer
+    {
+        padding: 30px 0;
+    }
+    footer .container
+    {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0px;
+    }
+    .copyrightText
+    {
+        font-size: 10px;
+    }
+    footer .container .sec h2
+    {
+        font-size: 20px;
+    }
+
+    footer .container .sci
+    {
+        width: 100%;
+        display: block;
+    }
+    footer .container .sci li
+    {
+        display: flex;
+        margin-top: 10px;
+    }
+
+    footer .container .sci li a
+    {
+        display: flex;
+    }
+
+    footer .container .sci li a p
+    {
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: white;
+        visibility: visible;
+        margin-left: 20px;
+        font-size: 14px;
+        transition: all 0.3s ease-in;
+    }
+
+    footer .container .sci li a p:hover
+    {
+        font-size: 15px;
+    }
+
+    .icn
+    {
+        width: 28px;
+    }
+}
+
+@media screen and (max-width:510px)
+{
+    footer
+    {
+        padding: 40px 50px;
+    }
+}
+
+@media screen and (max-width:400px)
+{
+    footer
+    {
+        padding: 40px 30px;
+    }
+}
+
+@media screen and (max-width:440px)
+{
+    .icn
+    {
+        object-fit: cover;
+        width: 28px;
+    }
+    footer .container .contact .info li a
+    {
+        align-items: baseline;
+    }
+    footer .container .contact .info li a p
+    {
+        font-size: 17px;
+    }
+    .copyrightText a
+    {
+        font-size: 12px;
+        font-family: 'Oxanium', sans-serif;
+    }
+    .copyrightText a:hover
+    {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:340px)
+{
+    footer .container .sci li a p
+    {
+        font-size: 17px;
+    }
+    .footer
+    {
+        padding: 50px 0;
+    }
+    .footer .container
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .footer .container .sec p
+    {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:320px)
+{
+    .footer
+    {
+        padding: 40px 0;
+    }
+    footer .container .sec h2
+    {
+        font-size: 18px;
+    }
+    footer .container .sec h3 
+    {
+        font-size: 14px;
+    }
+    footer .container .sec p
+    {
+        font-size: 12px;
+    }
+    footer .container .quicklinks ul li a
+    {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:310px)
+{
+    footer
+    {
+        padding: 20px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    footer .container .aboutus ul
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-right: 0px;
+    }
+    footer .container .contact
+    {
+        width: 100%;
+    }
+    footer .container .contact .info
+    {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    footer .container .contact .info li a
+    {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+

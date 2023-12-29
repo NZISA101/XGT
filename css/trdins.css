@@ -1,0 +1,512 @@
+:root
+{
+    --total-brand:14;
+    --logo-width:12rem;
+    --total-logo-width: calc(var(--total-brand) * var(--logo-width) * 2);
+    --animation-duration: calc(var(--total-brand) * 2s);
+    --mg-top:20px;
+}
+
+.head
+{
+    margin-bottom: 30px;
+}
+
+/* ABOUT SECTION */
+.about
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.about .cent
+{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.about .cent h1
+{
+    font-family: 'Oxanium ExtraBold', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    font-size: 30px;
+    position: relative;
+    text-transform: uppercase;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.about h1 span
+{
+    position: relative;
+    background: white;
+    padding: 0 20px;
+}
+
+.about .title
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about .title::before
+{
+    content: "";
+    height: 2px;
+    width: 100vw;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: -3;
+}
+
+.about .title::after
+{
+    content: "";
+    height: 2px;
+    width: 100vw;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: -2;
+}
+
+.about .first
+{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.about p
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media (max-width: 990px)
+{
+    .about p
+    {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+
+/* PRODUCTS SECTION */
+.products
+{
+    width: 100%;
+    min-height: 70vh;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.products h1
+{
+    font-family: 'Oxanium ExtraBold', sans-serif;
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.products h2
+{
+    font-family: 'Oxanium ExtraBold', sans-serif;
+    font-weight: 200;
+    font-size: 27px;
+}
+
+.products .part
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 180px;
+    width: 92%;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.products .part .details
+{
+    margin-left: 40px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.products .part img
+{
+    width: auto;
+    height: 200px;
+}
+
+@media (max-width: 1150px)
+{
+    .products
+    {
+        width: 100%;
+    }
+    .products .part
+    {
+        gap: 90px;
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 880px)
+{
+    .products h1
+    {
+        margin-bottom: 4px;
+    }
+    .products h2
+    {
+        font-size: 23px;
+    }
+    .products .part .details
+    {
+        margin-left: 0;
+    }
+    .products .part
+    {
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+    }
+    .products .part:nth-child(3)
+    {
+        flex-direction: column-reverse;
+    }
+    .products h2,
+    .products h3,
+    .products p
+    {
+        text-align: center;
+    }
+}
+
+@media (max-width: 450px)
+{
+    .products h1
+    {
+        font-size: 30px;
+    }
+    .products .part img
+    {
+        width: auto;
+        height: 150px;
+    }
+    .products .part
+    {
+        margin-bottom: 20px;
+    }
+}
+
+/* COMPTERS INFORM SECTION */
+.inform
+{
+    min-height: 40vh;
+    margin-bottom: 40px;
+    width: 100%;
+    background: rgba(40, 40, 40, 0.746) url(../img/15.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    overflow-x: hidden;
+}
+
+.inform .info
+{
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.inform .info h1
+{
+    width: 100%;
+    font-family: 'Oxanium ExtraBold', sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.inform .info p
+{
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+@media (max-width: 880px)
+{
+    .inform .info h1
+    {
+        font-size: 30px;
+    }
+    .inform .info p
+    {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 460px)
+{
+    .inform .info
+    {
+        width: 90%;
+    }
+    .inform .info h1
+    {
+        font-size: 30px;
+    }
+    .inform .info p
+    {
+        font-size: 15px;
+    }
+}
+
+/* HERO SECTION */
+.hero
+{
+    min-height: 50vh;
+    background: rgba(40, 40, 40, 0.746) url(../img/call.jpg);
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: luminosity;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.hero .content
+{
+    color: #fff;
+    margin-left: 70px;
+    width: 90%;
+}
+
+.hero .content h1
+{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hero .content h2
+{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.hero .content p
+{
+    font-size: 20px;
+}
+
+
+@media (max-width:900px)
+{
+    .hero
+    {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .hero .content
+    {
+        margin-left: 0;
+        margin-bottom: 50px;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width:620px)
+{
+    .hero .content h1
+    {
+        font-size: 32px;
+        margin-top: 20px;
+    }
+    .hero .content h2
+    {
+        font-size: 24px;
+    }
+    .hero .content p
+    {
+        font-size: 17px;
+    }
+}
+
+@media (max-width:520px)
+{
+    .hero
+    {
+        background-blend-mode: normal;
+    }
+    .hero .content h1
+    {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    .hero .content h2
+    {
+        font-size: 20px;
+    }
+    .hero .content p
+    {
+        font-size: 15px;
+    }
+}
+
+
+/* Partners */
+.partners
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: var(--mg-top);
+    margin-bottom: var(--mg-top);
+}
+
+.partners h1
+{
+    width: 90%;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 40px;
+    font-family: 'Oxanium ExtraBold', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 1.4rem;
+    text-align: center;
+}
+
+.partners .slider
+{
+    position: relative;
+    width: 100%;
+    height: 12rem;
+    background-color: whitesmoke;
+    box-shadow: 0 .8rem 1.4rem -.2rem #0001;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.partners .slider::before,
+.partners .slider::after
+{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: var(--logo-width);
+}
+
+.partners .slider::before
+{
+    left: 0;
+    background: linear-gradient(to right, #fff 0%, #fff0 100%);
+}
+
+.partners .slider::after
+{
+    right: 0;
+    background: linear-gradient(to left, #fff 0%, #fff0 100%);
+}
+
+.partners .slider ul.brands
+{
+    width: var(--total-logo-width);
+    display: flex;
+    animation: sliderleft var(--animation-duration) linear infinite;
+    transition: 0.3s;
+    justify-content: center;
+    align-items: center;
+}
+
+.partners .slider:hover ul.brands
+{
+    animation-play-state: paused;
+}
+
+@keyframes sliderleft
+{
+    100%
+    {
+        transform: translateX(calc(-100% / 2));
+    }
+}
+
+.partners .slider ul.brands li
+{
+    list-style: none;
+}
+
+.partners .slider ul.brands li.brand-logo
+{
+    width: var(--logo-width);
+    align-items: center;
+    margin-left: 3rem;
+}
+
+.partners .brand-img
+{
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: auto;
+}
+
+@media (max-width: 510px)
+{
+    .partners h1
+    {
+        width: 94%;
+        font-size: 30px;
+    }
+}

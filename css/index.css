@@ -1,0 +1,948 @@
+/* HERO SECTION */
+.hero
+{
+    min-height: 80vh;
+    background: rgba(40, 40, 40, 0.746) url(../img/hero.jpg);
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: color-burn;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.hero .content
+{
+    color: #fff;
+    margin-left: 70px;
+}
+
+.hero .content h1
+{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hero .content p
+{
+    font-size: 20px;
+}
+
+.hero .content .play
+{
+    display: flex;
+    color: #fff;
+    font-size: 25px;
+    width: 260px;
+    margin-top: 30px;
+    background-color: var(--hover-eff);
+    clip-path: polygon(0 0, 70% 0, 55% 100%, 0% 100%);
+    border-top-left-radius: 20px;
+}
+
+.hero .play a
+{
+    text-decoration: none;
+    font-family: 'Oxanium ExtraBold', sans-serif;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 14px 30px;   
+}
+
+.hero .cards
+{
+    margin-right: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.hero .cards img
+{
+    width: 400px;
+    height: 400px;
+    filter: grayscale(100%);
+    transition: 0.2s ease-in;
+}
+
+.hero .cards img:hover
+{
+    cursor: pointer;
+    filter: grayscale(0);
+    transform: scale(1.04);
+}
+
+@media (max-width:1100px)
+{
+    .hero .cards
+    {
+        margin-right: 40px;
+    }
+}
+
+@media (max-width:900px)
+{
+    .hero
+    {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        min-height: 50vh;
+    }
+    .hero .cards
+    {
+        margin-right: 0;
+    }
+    .hero .cards img
+    {
+        width: 300px;
+        height: 300px;
+        margin-top: 20px;
+    }
+    .hero .cards img:hover
+    {
+        transform: scale(1);
+    }
+    .hero .content
+    {
+        margin-left: 0;
+        margin-bottom: 50px;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .hero .content .play
+    {
+        margin-left: 70px;
+        border-top-left-radius: 0px;
+        clip-path: polygon(10% 0, 67% 0, 55% 100%, 0% 100%);
+    }
+    .hero .content .play a
+    {
+        padding: 14px 34px;
+    }
+}
+
+@media (max-width:520px)
+{
+    .hero .cards img
+    {
+        margin-top: 30px;
+        width: 250px;
+        height: 250px;
+    }
+    .hero .cards img:hover
+    {
+        transform: scale(1.04);
+    }
+    .hero .content h1
+    {
+        font-size: 30px;
+    }
+    .hero .content p
+    {
+        font-size: 17px;
+    }
+}
+
+/* ABOUT SECTION */
+.about
+{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.about h1
+{
+    font-family: 'Oxanium ExtraBold', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.about h1 span
+{
+    position: relative;
+    background: white;
+    padding: 0 20px;
+}
+
+.about .title
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about .title::before
+{
+    content: "";
+    height: 2px;
+    width: 50vw;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: -3;
+}
+
+.about .title::after
+{
+    content: "";
+    height: 2px;
+    width: 50vw;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: -2;
+}
+
+.about .card-holder
+{
+    position: relative;
+    display: flex;
+    padding: 10px 30px;
+    justify-content: center;
+    gap: 140px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about .card-holder .card
+{
+    width: 300px;
+    height: 400px;
+    margin-bottom: 20px;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+
+.about .card-holder .card:hover
+{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+.about .card-holder .card .front .abt-logo
+{
+    object-fit: contain;
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.about .card-holder .card .front .abt-logo2
+{
+    object-fit: contain;
+    width: 100px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.front
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.front,
+.back
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50,  0.25);
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.back
+{
+    background: white;
+    color: black;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media (max-width:1260px)
+{
+    .about .card-holder
+    {
+        gap: 100px;
+    }
+    .about .card-holder .card
+    {
+        width: 250px;
+        height: 350px;
+    }
+    .about .card-holder .card .front h1
+    {
+        font-size: 30px;
+    }
+    .about .card-holder .card .back h1
+    {
+        font-size: 30px;
+    }
+}
+
+@media (max-width:1030px)
+{
+    .about .card-holder
+    {
+        gap: 60px;
+        row-gap: 10px;
+    }
+    .about .card-holder .card
+    {
+        width: 200px;
+        height: 300px;
+    }
+    .about .card-holder .card .front .abt-logo
+    {
+        width: 60px;
+    }
+    .about .card-holder .card .front .abt-logo2
+    {
+        width: 70px;
+    }.about .card-holder .card .front h1
+    {
+        font-size: 27px;
+    }
+    .about .card-holder .card .back h1
+    {
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 600px)
+{
+    .about .card-holder
+    {
+        gap: 40px;
+        row-gap: 20px;
+    }
+}
+
+/* WELCOME SECTION */
+.welcome
+{
+    min-height: 70vh;
+    width: 100%;
+    background: rgba(40, 40, 40, 0.746) url(../img/cars.jpg);
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    overflow-x: hidden;
+}
+
+.welcome .info
+{
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.welcome .info h1
+{
+    width: 100%;
+    font-family: 'Oxanium ExtraBold', sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.welcome .info p
+{
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+@media (max-width: 880px)
+{
+    .welcome
+    {
+        min-height: 50vh;
+    }
+    .welcome .info h1
+    {
+        font-size: 25px;
+    }
+    .welcome .info p
+    {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 460px)
+{
+    .welcome
+    {
+        min-height: 50vh;
+    }
+    .welcome .info
+    {
+        width: 90%;
+    }
+    .welcome .info h1
+    {
+        font-size: 20px;
+    }
+    .welcome .info p
+    {
+        font-size: 15px;
+    }
+}
+
+/* PRODUCTS SECTION */
+.products
+{
+    width: 100%;
+    min-height: 70vh;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.products h1
+{
+    font-family: 'Oxanium ExtraBold', sans-serif;
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.products h2
+{
+    font-family: 'Oxanium ExtraBold', sans-serif;
+    font-weight: 200;
+    font-size: 27px;
+}
+
+.products .part
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 180px;
+    width: 92%;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.products .part .details
+{
+    margin-left: 40px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.products .part img
+{
+    width: auto;
+    height: 200px;
+}
+
+@media (max-width: 1150px)
+{
+    .products
+    {
+        width: 100%;
+    }
+    .products .part
+    {
+        gap: 90px;
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 880px)
+{
+    .products h1
+    {
+        margin-bottom: 4px;
+    }
+    .products h2
+    {
+        font-size: 23px;
+    }
+    .products .part .details
+    {
+        margin-left: 0;
+    }
+    .products .part
+    {
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+    }
+    .products .part:nth-child(3)
+    {
+        flex-direction: column-reverse;
+    }
+    .products h2,
+    .products h3,
+    .products p
+    {
+        text-align: center;
+    }
+}
+
+@media (max-width: 450px)
+{
+    .products h1
+    {
+        font-size: 30px;
+    }
+    .products .part img
+    {
+        width: auto;
+        height: 150px;
+    }
+    .products .part
+    {
+        margin-bottom: 20px;
+    }
+}
+
+/* COMPTERS INFORM SECTION */
+.inform
+{
+    min-height: 40vh;
+    width: 100%;
+    background: rgba(40, 40, 40, 0.746) url(../img/creed.jpg);
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    overflow-x: hidden;
+}
+
+.inform .info
+{
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.inform .info h1
+{
+    width: 100%;
+    font-family: 'Oxanium ExtraBold', sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.inform .info p
+{
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+@media (max-width: 880px)
+{
+    .inform .info h1
+    {
+        font-size: 30px;
+    }
+    .inform .info p
+    {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 460px)
+{
+    .inform .info
+    {
+        width: 90%;
+    }
+    .inform .info h1
+    {
+        font-size: 30px;
+    }
+    .inform .info p
+    {
+        font-size: 15px;
+    }
+}
+
+/* SCROLLER SECTION */
+.scroller
+{
+    min-height: 50vh;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgScroll
+{
+    position: relative;
+    left: 0;
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    overflow-x: hidden;
+}
+
+.imgScroll .roller
+{
+    display: flex;
+    animation: animate 40s linear infinite;
+    animation-delay: -40s;
+}
+
+.imgScroll .roller:nth-child(2)
+{
+    animation: animate2 40s linear infinite;
+    animation-delay: -20s;
+}
+
+.imgScroll:hover .roller,
+.imgScroll:hover .roller:nth-child(2)
+{
+    animation-play-state: paused;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: translateX(100%);
+    }
+    100%
+    {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes animate2
+{
+    0%
+    {
+        transform: translateX(0%);
+    }
+    100%
+    {
+        transform: translateX(-200%);
+    }
+}
+
+.imgScroll .roller img
+{
+    margin: 0 25px;
+    width: 300px;
+    min-height: 200px;
+    border: 10px solid transparent;
+    transition: 0.25s ease-in-out;
+    background-size: cover;
+}
+
+.imgScroll .roller img:hover
+{
+    border: 10px solid white;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.imgScroll:hover .roller img
+{
+    opacity: 0.05;
+    filter: blur(5px);
+}
+
+.imgScroll .roller img:hover
+{
+    opacity: 1;
+    filter: blur(0px);  
+}
+
+
+
+/* GAMES INFORM SECTION */
+.inform2
+{
+    min-height: 40vh;
+    width: 100%;
+    background: rgba(40, 40, 40, 0.746) url(../img/14.png);
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    overflow-x: hidden;
+}
+
+.inform2 .info
+{
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.inform2 .info h1
+{
+    width: 100%;
+    font-family: 'Oxanium ExtraBold', sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.inform2 .info p
+{
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+@media (max-width: 880px)
+{
+    .inform2 .info h1
+    {
+        font-size: 30px;
+    }
+    .inform2 .info p
+    {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 460px)
+{
+    .inform2 .info
+    {
+        width: 90%;
+    }
+    .inform2 .info h1
+    {
+        font-size: 30px;
+    }
+    .inform2 .info p
+    {
+        font-size: 15px;
+    }
+}
+
+
+/* SHOP INFORM SECTION */
+.inform3
+{
+    min-height: 40vh;
+    width: 100%;
+    background: rgba(40, 40, 40, 0.746) url(../img/17.jpeg);
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    overflow-x: hidden;
+}
+
+.inform3 .info
+{
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.inform3 .info h1
+{
+    width: 100%;
+    font-family: 'Oxanium ExtraBold', sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.inform3 .info p
+{
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+@media (max-width: 880px)
+{
+    .inform3 .info h1
+    {
+        font-size: 30px;
+    }
+    .inform3 .info p
+    {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 460px)
+{
+    .inform3 .info
+    {
+        width: 90%;
+    }
+    .inform2 .info h1
+    {
+        font-size: 30px;
+    }
+    .inform3 .info p
+    {
+        font-size: 15px;
+    }
+}
+
+
+/* CALL TO ACTION SECTION */
+.callTaction
+{
+    min-height: 40vh;
+    width: 100%;
+    background: rgba(40, 40, 40, 0.746) url(../img/10.jpg);
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    overflow-x: hidden;
+}
+
+.callTaction .info
+{
+    width: 90%;
+}
+
+.callTaction .info h1
+{
+    width: 100%;
+    font-family: 'Oxanium ExtraBold', sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.callTaction form
+{
+    display: flex;
+    align-items: center;
+}
+
+.callTaction form input
+{
+    font-family: 'Oxanium', sans-serif;
+}
+
+.callTaction form input[type="text"]
+{
+    font-size: 14px;
+    padding: 5px 15px;
+    border:none;
+    margin-right: 10px;
+    width: 400px;
+    overflow-x: hidden;
+}
+
+.callTaction form input[type="submit"]
+{
+    background-color: var(--hover-eff);
+    color: white;
+    font-weight: bold;
+    box-shadow: inset 0 1px 1px rgba(255,255,0,.6); 
+    padding: 5px 15px;
+    font-size: 14px;
+    border: none;
+    overflow-x: hidden;
+}
+
+@media (max-width: 880px)
+{
+    .callTaction .info h1
+    {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 500px)
+{
+    .callTaction form
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .callTaction form input[type="text"]
+    {
+        margin-bottom: 10px;
+        width: 90%;
+    }
+}
+
+@media (max-width: 460px)
+{
+    .callTaction .info
+    {
+        width: 90%;
+    }
+    .callTaction .info h1
+    {
+        font-size: 30px;
+    }
+}

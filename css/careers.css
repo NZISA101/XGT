@@ -1,0 +1,426 @@
+.middle
+{
+    display: flex;
+    align-items: center;
+    min-height: 90vh;
+    margin-bottom: 10px;
+}
+
+
+/* FAQ SECTION */
+.inform
+{
+    min-height: 40vh;
+    width: 100%;
+    background: rgba(40, 40, 40, 0.746) url(../img/13.jpg);
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    overflow-x: hidden;
+    margin-bottom: 30px;
+}
+
+.inform .info
+{
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.inform .info h1
+{
+    width: 100%;
+    font-family: 'Oxanium ExtraBold', sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.inform .info p
+{
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+@media (max-width: 880px)
+{
+    .inform .info h1
+    {
+        font-size: 30px;
+    }
+    .inform .info p
+    {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 460px)
+{
+    .inform .info
+    {
+        width: 90%;
+    }
+    .inform .info h1
+    {
+        font-size: 30px;
+    }
+    .inform .info p
+    {
+        font-size: 15px;
+    }
+}
+
+
+.wrapper
+{
+    max-width: 1000px;
+    padding: 0 20px;
+    margin-bottom: 30px;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wrapper .parent-tab
+{
+    margin-bottom: 8px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.18);
+}
+
+.wrapper .parent-tab label
+{
+    background: var(--hover-eff);
+    gap: 20px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    border-radius: 3px;
+    position: relative;
+}
+
+.wrapper label span
+{
+    color: white;
+    font-family: 'Oxanium ExtraBold', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-shadow: 0 -1px 1px black;
+}
+
+.wrapper label .acc-icn
+{
+    position: relative;
+    object-fit: contain;
+    width: 30px;
+    height: 30px;
+    fill: white;
+    display: block;
+}
+
+.wrapper .parent-tab .content
+{
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.wrapper .parent-tab .content h3
+{
+    padding: 0 20px;
+    font-size: 16px;
+}
+
+.wrapper .parent-tab .content h3:nth-child(1)
+{
+    margin-top: 10px;
+}
+
+.wrapper .parent-tab .content p
+{
+    font-size: 16px;
+    padding: 0 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.wrapper .parent-tab .content a
+{
+    text-decoration: none;
+    color: var(--hover-eff);
+    font-size: 16px;
+    padding: 0 20px;
+    margin-bottom: 10px;
+}
+
+.wrapper .parent-tab .content p a
+{
+    text-decoration: none;
+    color: var(--hover-eff);
+    font-size: 16px;
+    padding: 0 0;
+    margin-bottom: 10px;
+}
+
+.wrapper .parent-tab input:checked ~ .content
+{
+    max-height: 120vh;
+}
+
+.wrapper input
+{
+    display: none;
+}
+
+@media (max-width: 750px)
+{
+    .wrapper .parent-tab label
+    {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .wrapper label span
+    {
+        text-align: center;
+    }
+    .wrapper .parent-tab .content p
+    {
+        font-size: 14px;
+    }
+    .wrapper .parent-tab .content a
+    {
+        font-size: 14px;
+    }
+    .wrapper .parent-tab .content p a
+    {
+        font-size: 14px;
+    }
+    .wrapper .parent-tab input:checked ~ .content
+    {
+        max-height: 150vh;
+    }
+}
+
+@media (max-width: 400px)
+{
+    .wrapper .parent-tab label
+    {
+        padding: 6px 6px;
+    }
+    .wrapper label span
+    {
+        font-size: 10px;
+    }
+    .wrapper .parent-tab .content h3
+    {
+        font-size: 12px;
+    }
+    .wrapper .parent-tab .content p
+    {
+        font-size: 12px;
+    }
+    .wrapper .parent-tab .content a
+    {
+        font-size: 12px;
+    }
+    .wrapper .parent-tab .content p a
+    {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 750px)
+{
+    .wrapper .parent-tab input:checked ~ .content
+    {
+        max-height: 180vh;
+    }
+}
+
+
+/* ABOUT SECTION */
+.about
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.about .cent
+{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.about .cent h1
+{
+    font-family: 'Oxanium ExtraBold', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    font-size: 30px;
+    position: relative;
+    text-transform: uppercase;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.about h1 span
+{
+    position: relative;
+    background: white;
+    padding: 0 20px;
+}
+
+.about .title
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about .title::before
+{
+    content: "";
+    height: 2px;
+    width: 100vw;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: -3;
+}
+
+.about .title::after
+{
+    content: "";
+    height: 2px;
+    width: 100vw;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: -2;
+}
+
+.about .first
+{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.about p
+{
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 990px)
+{
+    .about p
+    {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+
+
+/* MESAGE US SECTION */
+.callTaction
+{
+    min-height: 50vh;
+    width: 100%;
+    background: rgba(40, 40, 40, 0.746) url(../img/13.jpg);
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    overflow-x: hidden;
+}
+
+.callTaction .info
+{
+    width: 90%;
+}
+
+.callTaction .info h1
+{
+    width: 100%;
+    font-family: 'Oxanium ExtraBold', sans-serif;
+    font-size: 37px;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.callTaction p
+{
+    color: white;
+    margin-bottom: 10px;
+}
+
+.callTaction p:nth-child(1)
+{
+    margin-bottom: 30px;
+}
+
+
+@media (max-width: 880px)
+{
+    .callTaction .info h1
+    {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 500px)
+{
+    .callTaction 
+    {
+        text-align: center;
+    }
+}
+
+@media (max-width: 460px)
+{
+    .callTaction .info
+    {
+        width: 90%;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .callTaction .info h1
+    {
+        font-size: 30px;
+    }
+}

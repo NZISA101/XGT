@@ -1,0 +1,55 @@
+html
+{
+    scroll-behavior: smooth;
+}
+
+:root
+{
+    --hover-eff: red;
+    --font-color: black;
+    --bg-color: white;
+    /*linear-gradient(rgba(240, 233, 233, 0.5), rgba(240, 233, 233, 0.5))*/
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: "Oxanium", sans-serif;
+    overflow-x: hidden;
+}
+
+section
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.upper
+{
+    width: 100%;
+    margin-bottom: 4px;
+    min-height: auto;
+}
+
+.lower
+{
+    bottom: 0;
+}

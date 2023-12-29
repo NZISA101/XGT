@@ -1,0 +1,327 @@
+.middle
+{
+    display: flex;
+    align-items: center;
+    min-height: 90vh;
+    margin-bottom: 10px;
+}
+
+
+/* FAQ SECTION */
+.inform
+{
+    min-height: 40vh;
+    width: 100%;
+    background: rgba(40, 40, 40, 0.746) url(../img/16.jpeg);
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    overflow-x: hidden;
+    margin-bottom: 30px;
+}
+
+.inform .info
+{
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.inform .info h1
+{
+    width: 100%;
+    font-family: 'Oxanium ExtraBold', sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.inform .info p
+{
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+@media (max-width: 880px)
+{
+    .inform .info h1
+    {
+        font-size: 30px;
+    }
+    .inform .info p
+    {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 460px)
+{
+    .inform .info
+    {
+        width: 90%;
+    }
+    .inform .info h1
+    {
+        font-size: 30px;
+    }
+    .inform .info p
+    {
+        font-size: 15px;
+    }
+}
+
+
+.wrapper
+{
+    max-width: 1000px;
+    padding: 0 20px;
+    margin-bottom: 30px;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wrapper .parent-tab
+{
+    margin-bottom: 8px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.18);
+}
+
+.wrapper .parent-tab label
+{
+    background: var(--hover-eff);
+    gap: 20px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    border-radius: 3px;
+    position: relative;
+}
+
+.wrapper label span
+{
+    color: white;
+    font-family: 'Oxanium ExtraBold', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-shadow: 0 -1px 1px black;
+}
+
+.wrapper label .acc-icn
+{
+    position: relative;
+    object-fit: contain;
+    width: 30px;
+    height: 30px;
+    fill: white;
+    display: block;
+}
+
+.wrapper .parent-tab .content
+{
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.wrapper .parent-tab .content p
+{
+    font-size: 16px;
+    padding: 0 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.wrapper .parent-tab .content a
+{
+    text-decoration: none;
+    color: var(--hover-eff);
+    font-size: 16px;
+    padding: 0 20px;
+    margin-bottom: 10px;
+}
+
+.wrapper .parent-tab .content p a
+{
+    text-decoration: none;
+    color: var(--hover-eff);
+    font-size: 16px;
+    padding: 0 0;
+    margin-bottom: 10px;
+}
+
+.wrapper .parent-tab input:checked ~ .content
+{
+    max-height: 100vh;
+}
+
+.wrapper input
+{
+    display: none;
+}
+
+@media (max-width: 750px)
+{
+    .wrapper .parent-tab label
+    {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .wrapper label span
+    {
+        text-align: center;
+    }
+    .wrapper .parent-tab .content p
+    {
+        font-size: 14px;
+    }
+    .wrapper .parent-tab .content a
+    {
+        font-size: 14px;
+    }
+    .wrapper .parent-tab .content p a
+    {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px)
+{
+    .wrapper .parent-tab label
+    {
+        padding: 6px 6px;
+    }
+    .wrapper label span
+    {
+        font-size: 10px;
+    }
+    .wrapper .parent-tab .content p
+    {
+        font-size: 12px;
+    }
+    .wrapper .parent-tab .content a
+    {
+        font-size: 12px;
+    }
+    .wrapper .parent-tab .content p a
+    {
+        font-size: 12px;
+    }
+}
+
+
+/* MESAGE US SECTION */
+.callTaction
+{
+    min-height: 30vh;
+    width: 100%;
+    background: rgba(40, 40, 40, 0.746) url(../img/12.jpg);
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    overflow-x: hidden;
+}
+
+.callTaction .info
+{
+    width: 90%;
+}
+
+.callTaction .info h1
+{
+    width: 100%;
+    font-family: 'Oxanium ExtraBold', sans-serif;
+    font-size: 37px;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.callTaction .play
+{
+    display: flex;
+    color: #fff;
+    font-size: 25px;
+    width: 260px;
+    margin-top: 30px;
+    background-color: var(--hover-eff);
+    clip-path: polygon(0 0, 70% 0, 55% 100%, 0% 100%);
+    border-top-left-radius: 20px;
+}
+
+.callTaction .play a
+{
+    font-family: 'Oxanium ExtraBold', sans-serif;
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    padding: 14px 24px;   
+}
+
+
+@media (max-width:900px)
+{
+    .callTaction .play
+    {
+        border-top-left-radius: 0px;
+        clip-path: polygon(10% 0, 67% 0, 55% 100%, 0% 100%);
+    }
+    .callTaction .play a
+    {
+        padding: 14px 30px;
+    }
+}
+
+@media (max-width: 880px)
+{
+    .callTaction .info h1
+    {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 500px)
+{
+    .callTaction 
+    {
+        text-align: center;
+    }
+}
+
+@media (max-width: 460px)
+{
+    .callTaction .info
+    {
+        width: 90%;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .callTaction .info h1
+    {
+        font-size: 30px;
+    }
+    .callTaction .play
+    {
+        margin-left: 70px;
+    }
+}
